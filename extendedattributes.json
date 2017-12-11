@@ -1,0 +1,12 @@
+[{
+  "consoleLinks": [{
+    "name": "IBM-Cloud-private",
+    "url": "https:\/\/{public-ip}:8443/"
+  }],
+
+
+  "manual_keys": [],
+  "readonly": "false",
+  "rolling": false,
+  "savevars": "1"
+}]

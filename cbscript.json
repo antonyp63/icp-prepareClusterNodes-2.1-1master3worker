@@ -1,0 +1,89 @@
+[{
+  "command": "prepare.sh",
+  "execmode": 0,
+  "filename": "icp-prepareClusterNodes-2.1.zip",
+  "keys": [
+    {
+       "locked": false,
+       "required": false,
+       "scriptkey": "MASTER_1_IP",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": false,
+       "scriptkey": "WORKER_1_IP",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": false,
+       "scriptkey": "WORKER_2_IP",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": false,
+       "scriptkey": "WORKER_3_IP",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": true,
+       "scriptkey": "SSH_ROOT_PWD",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": true,
+       "scriptdefaultvalue": "true",
+       "scriptkey": "CALICO_IPIP_ENABLED",
+       "scriptvalue": "true",
+       "type": "boolean"
+    },
+    {
+      "locked": false,
+      "required": true,
+      "scriptkey": "NFS_SERVER_IP",
+      "type": "string"
+    },
+    {
+       "locked": false,
+       "required": true,
+       "scriptdefaultvalue": "http:\/\/atlantis.syd.iic.ihost.com\/files\/software\/PureApplication\/Patterns\/IBM-Cloud-private",
+       "scriptkey": "INSTALLER_BASEURL",
+       "scriptvalue": "http:\/\/atlantis.syd.iic.ihost.com\/files\/software\/PureApplication\/Patterns\/IBM-Cloud-private",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": true,
+       "scriptdefaultvalue": "ibm-cloud-private-x86_64-2.1.0.tar.gz",
+       "scriptkey": "INSTALLER_FILENAME",
+       "scriptvalue": "ibm-cloud-private-x86_64-2.1.0.tar.gz",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": true,
+       "scriptdefaultvalue": "\/opt\/ibm-cloud-private-2.1.0",
+       "scriptkey": "INSTALL_DIR",
+       "scriptvalue": "\/opt\/ibm-cloud-private-2.1.0",
+       "type": "string"
+    },
+    {
+       "locked": false,
+       "required": true,
+       "scriptdefaultvalue": "ibmcom\/icp-inception:2.1.0-ee",
+       "scriptkey": "IMAGE_NAME",
+       "scriptvalue": "ibmcom\/icp-inception:2.1.0-ee",
+       "type": "string"
+    }
+    ],
+  "location": "\/tmp\/icp\/boot",
+  "name": "icp-prepareClusterNodes",
+  "ostype": "linux\/unix",
+  "timeout": 60000000,
+  "type": "APPLICATION",
+  "version": "2.1 1master3worker-ver0.1"
+}]
